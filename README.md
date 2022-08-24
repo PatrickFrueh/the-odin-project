@@ -1,0 +1,1 @@
+This repository displays the assignments of "The Odin Project".
