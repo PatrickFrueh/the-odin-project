@@ -1,0 +1,20 @@
+.odd {
+    background-color: rgb(236, 161, 161);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+.cool{
+    font-size: 24px;
+}
+
+#weird {
+    color: rgb(0, 0, 255);
+    font-size: 36px;
+}
+
+#even {
+    background-color: rgb(159, 255, 159);
+    font-size: 24px;
+    font-weight: 700;
+}
+/* p3 = unique
