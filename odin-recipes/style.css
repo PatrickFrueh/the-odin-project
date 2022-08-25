@@ -1,0 +1,16 @@
+* {
+    background-color: rgb(206, 205, 180);
+}
+
+h1 {
+    font-size: 72px;
+}
+
+.list {
+    font-size: 28px;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
