@@ -1,0 +1,24 @@
+* {
+    border-style: solid;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+}
+
+.buildings {
+    display: flex;
+}
+
+.quote {
+    display: flex;
+}
+
+.footer {
+    display: flex;
+}
