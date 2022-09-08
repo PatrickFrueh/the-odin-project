@@ -5,20 +5,54 @@
 body {
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
 .header {
+    /* irrelevant visualization */
+    border-color: red;
+
+    /* actual content */
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin: 0 150px 50px;
 }
 
-.buildings {
+.top-head {
+    border-color: greenyellow;
+
     display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
 }
 
-.quote {
-    display: flex;
+.header-links {
+    margin-left: auto;
 }
 
-.footer {
+ul {
+    border-color: blue;
+
+    padding: 0;
+    margin: 0;
+    gap: 10px;
+    list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.head-content {
+    border-color: darkmagenta;
+    
+    display: flex;
+    width: 100%;
+}
+
+.opening-img {
+    flex-grow: 1;
 }
