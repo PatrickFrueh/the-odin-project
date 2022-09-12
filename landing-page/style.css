@@ -204,7 +204,12 @@ img {
 
 .quote-author {
     margin: 0 40px 60px 40px;
-    /* font-size: 36px; */
+    font-size: 20px;
     font-weight: 700;
     align-self: flex-end;
 }
+
+/* -!-!-!-!-!-!- */
+/* fourth box: call-to-action */
+/* -!-!-!-!-!-!- */
+
