@@ -118,6 +118,7 @@ img {
 
 /* -!-!-!-!- */
 /* second box */
+/* -!-!-!-!- */
 
 .buildings {
     border-color: green;
@@ -181,4 +182,29 @@ img {
     width: 150px;
     text-align: center;
 }
-/* second box */
+
+/* -!-!-!-!-!-!- */
+/* third box: quote */
+/* -!-!-!-!-!-!- */
+
+.quote {
+    background-color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-end ; */
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    color: #4e4e4e;
+    margin: 80px 40px 5px 40px;
+}
+
+.quote-author {
+    margin: 0 40px 60px 40px;
+    /* font-size: 36px; */
+    font-weight: 700;
+    align-self: flex-end;
+}
