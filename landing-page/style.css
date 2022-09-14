@@ -1,7 +1,3 @@
-/* * {
-    border-style: solid;
-} */
-
 body {
     display: flex;
     flex-direction: column;
@@ -11,10 +7,6 @@ body {
 }
 
 .header {
-    /* irrelevant visualization */
-    border-color: red;
-
-    /* actual content */
     background-color: #1F2937;
     display: flex;
     flex-direction: column;
@@ -23,8 +15,6 @@ body {
 }
 
 .top-head {
-    border-color: greenyellow;
-    
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -43,12 +33,9 @@ body {
     flex-direction: column;
     gap: 10px;
     height: 225px;
-    /* padding-right: 80px; */
 }
 
 ul {
-    border-color: blue;
-
     font-size: 18px;
     color: #E5E7EB;
     padding: 0;
@@ -56,7 +43,6 @@ ul {
     gap: 15px;
     list-style-type: none;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
@@ -69,12 +55,11 @@ button {
     border-radius: 5px;
     border: none;
 }
-/* header head */
-.head-content {
-    border-color: darkmagenta;
-    
+
+.head-content {    
     display: flex;
-    width: 75%;
+    height: 200px;
+    width: 900px;
     margin-bottom: 80px;
     gap: 40px;
 }
@@ -100,13 +85,8 @@ button {
     height: 60px;
 }
 
-
-
 .opening-img {
     margin-left: auto;
-    /* margin-left: auto; */
-    /* flex-grow: 1; */
-    /* height: 100%; */
     height: 225px;
 }
 /* header main part */
@@ -144,13 +124,9 @@ img {
 }
 
 .build-line {
-    border-color: crimson;
-
     display: flex;
     justify-content: center;
     gap: 40px;
-    
-    /* align-items: center; */
 }
 
 .build.one {
@@ -192,18 +168,27 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: flex-end ; */
+    align-items: center;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 40px 60px 40px;
+    height: 250px;
+    width: 800px;
 }
 
 .quote-text {
     font-size: 36px;
     font-style: italic;
     color: #4e4e4e;
-    margin: 80px 40px 5px 40px;
+    height: 200px;
+    width: 700px;
+    align-self: center;
 }
 
 .quote-author {
-    margin: 0 40px 60px 40px;
     font-size: 20px;
     font-weight: 700;
     align-self: flex-end;
@@ -214,26 +199,42 @@ img {
 /* -!-!-!-!-!-!- */
 
 .footer {
-    border-color: red;
-
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* push to border alignment */
 }
 
 .footer-cta {
     display: flex;
     justify-content: space-between;
     background-color: #3882F6;
-    margin: 60px 100px;
+    margin: 80px 140px;
     border-radius: 5px;
+    height: 150px;
+    width: 900px;
+    align-self: center;
+}
+
+.left-footer {    
+    color: #E5E7EB;
+    align-items: 40px;
+}
+
+.footer-head {
+    font-size: 20px;
+    font-weight: 900;
+    padding-top: 50px;
 }
 
 .footer-head, .footer-body {
-    color: #F9FAF8;
+    padding-left: 100px;
 }
 
- #cta-signup button {
-    border-color: white;
+.footer-box-right {
+    border-color: #E5E7EB;
+    border-style: solid;
+    align-self: center;
+    border-radius: 5px;
+    border-width: 3px;
+    margin: 100px;
 }
