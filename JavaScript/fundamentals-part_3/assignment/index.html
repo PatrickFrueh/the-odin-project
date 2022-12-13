@@ -13,7 +13,7 @@
         /* Initialize variables */
         let number1 = 7;
         let number2 = 5;
-        let stringi = '5123sdaw';
+        let stringi = 'seife';
 
         /* Add 7 to a number */
         function add7(num) {
@@ -35,10 +35,21 @@
             }
         }
 
+        /* Last letter */
+        function lastLetter(string) {
+            if (!(typeof string === 'string' || string instanceof String)) {
+                return 'Not a string!';
+            }
+            else {
+                return string.charAt(string.length - 1);
+            }
+        }
+
         /* Console output of functions using number */
         console.log('add7:', add7(number1));
         console.log('multiply:', multiply(number1, number2));
         console.log('capitalize:', capitalize(stringi));
+        console.log('last letter:', lastLetter(stringi));
 
     </script>
 </body>
