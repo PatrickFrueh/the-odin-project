@@ -3,7 +3,7 @@ function getComputerChoice() {
     /* Randomly generate number: 0, 1, 2 
        Pick computer choice based on number */
     let randomNumber = Math.floor(Math.random() * 3);
-    let choice = 'Non';
+    let choice = 'None';
 
     switch (randomNumber) {
         case 0:
@@ -23,47 +23,95 @@ function getComputerChoice() {
 
 /* Play a round of RPS */
 function playMatch(computerChoice, playerChoice) {
+    let result = 'None'
+    // console.log(computerChoice) --> seems to roll as expected
     switch (computerChoice) {
         case 'Rock':
             switch (playerChoice) {
                 case 'Rock':
-                    result = 'Even';
+                    console.log('Even.');
+                    result = 'E';
                     break;
                 case 'Paper':
-                    result = 'Player wins!';
+                    console.log('Player wins!');
+                    result = 'P';
                     break;
                 case 'Scissors':
-                    result = 'Computer wins!';
+                    console.log('Computer wins!');
+                    result = 'C';
                     break;
             }
+            return result;
         case 'Paper':
             switch (playerChoice) {
                 case 'Rock':
-                    result = 'Computer wins!';
+                    console.log('Computer wins!');
+                    result = 'C';
                     break;
                 case 'Paper':
-                    result = 'Even';
+                    console.log('Even.');
+                    result = 'E'
                     break;
                 case 'Scissors':
-                    result = 'Player wins!';
+                    console.log('Player wins!');
+                    result = 'P';
                     break;
             }
+            return result;
         case 'Scissors':
             switch (playerChoice) {
                 case 'Rock':
-                    result = 'Player wins!';
+                    console.log('Player wins!');
+                    result = 'P';
                     break;
                 case 'Paper':
-                    result = 'Computer wins';
+                    console.log('Computer wins!');
+                    result = 'C';
                     break;
                 case 'Scissors':
-                    result = 'Even';
+                    console.log('Even.');
+                    result = 'E';
                     break;
             }
+            return result;
     }
-    return result;
 }
 
-const playerSelection = "Scissors"
-const computerSelection = getComputerChoice()
-console.log(playMatch(computerSelection, playerSelection))
+function game(playerSelection) {
+    // Initialize match counter variables
+    let c = 0;
+    let p = 0;
+    let e = 0;
+    for (let i = 0; i < 5; i++) {
+        const computerSelection = getComputerChoice();
+        console.log(computerSelection)
+        result = playMatch(computerSelection, playerSelection)
+        console.log(result)
+        switch (result) {
+            case 'C':
+                c += 1;
+                break;
+            case 'P':
+                p += 1;
+                break;
+            case 'E':
+                e += 1;
+                break;
+        }
+        console.log('C:', c, '\nP:', p, '\nE:', e)
+    }
+
+    if (c > p) {
+        console.log('Computer wins!')
+    }
+    else if (c == p) {
+        console.log('No winners.')
+    }
+    else {
+        console.log('Player wins!')
+    }
+}
+
+// Play a match of Rock-Paper-Scissors
+const playerSelection = 'Scissors';
+game(playerSelection)
