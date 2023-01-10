@@ -1,3 +1,9 @@
+/* Helper function to adjust spelling */
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
+
 /* Randomly generated choice */
 function getComputerChoice() {
     /* Randomly generate number: 0, 1, 2 
@@ -24,7 +30,6 @@ function getComputerChoice() {
 /* Play a round of RPS */
 function playMatch(computerChoice, playerChoice) {
     let result = 'None'
-    // console.log(computerChoice) --> seems to roll as expected
     switch (computerChoice) {
         case 'Rock':
             switch (playerChoice) {
@@ -84,9 +89,10 @@ function game(playerSelection) {
     let e = 0;
     for (let i = 0; i < 5; i++) {
         const computerSelection = getComputerChoice();
-        console.log(computerSelection)
+        let playerSelection = prompt("Enter your choice for a match of Rock-Paper-Scissors:", 'Rock')
+        playerSelection = capitalizeFirstLetter(playerSelection)
+        console.log('corrected spelling', playerSelection)
         result = playMatch(computerSelection, playerSelection)
-        console.log(result)
         switch (result) {
             case 'C':
                 c += 1;
@@ -113,5 +119,5 @@ function game(playerSelection) {
 }
 
 // Play a match of Rock-Paper-Scissors
-const playerSelection = 'Scissors';
+const playerSelection = 'None'
 game(playerSelection)
